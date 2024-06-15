@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="myinfo">
+        <div class="part1"><h2>Subject Name:</h2><h3>Project Work-1</h3></div>
+        <div class="part2"><h2>Subject Code:</h2><h3>28556</h3></div>
+    </div>
+
+
+ <!-- MYIFNO PART2 START HERE  -->
+<div class="projectinfo">
+	<div class="p1"><h2>Project Name:</h2><h3>Arithmetic Calculator Using Html,Css & Js.</h3></div>
+	<div class="p2"><h2>Submitted By:<h3>Md.Khalid Hossain.</h3></h2></div>
+	<div class="p3"><h2>Roll:<h3>634478</h3></h2></div>
+</div>
+
+	
+<!-- MY INFO CODE PART ENDS HERE -->
+
+
+  <div class="container">
+	<fieldset id="container">
+		<form name="calculator">
+
+			<input id="display" type="text" name="display" readonly>
+
+			<input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+			<input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+			<input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+			<input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+			<br>
+			<input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+			<input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+			<input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+			<input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+			<br>
+			<input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+			<input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+			<input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+			<input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+			<br>
+			<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+			<input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+			<input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+			<input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+		</form>
+	</fieldset>
+</div>
+
+<!-- COPYRIGHT SECTION STARTS HERE -->
+
+<div class="copyright">
+	<h3>&copy;2024 All Rights Reserved.</h3>
+</div>
+
+  </body>
+</html>

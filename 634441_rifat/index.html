@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <div id="buttons">
+            <button class="num" onclick="appendToDisplay('7')">7</button>
+            <button class="num" onclick="appendToDisplay('8')">8</button>
+            <button class="num" onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            <button class="num" onclick="appendToDisplay('4')">4</button>
+            <button class="num" onclick="appendToDisplay('5')">5</button>
+            <button class="num" onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+            <button class="num" onclick="appendToDisplay('1')">1</button>
+            <button class="num" onclick="appendToDisplay('2')">2</button>
+            <button class="num" onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button> 
+            <button class="num" onclick="appendToDisplay('0')">0</button>
+            <button class="clear" onclick="clearDisplay()">AC</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+            <button class="operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        function appendToDisplay(value) {
+            const display = document.getElementById('display');
+            display.value += value;
+        }
+
+        function clearDisplay() {
+            const display = document.getElementById('display');
+            display.value = '';
+        }
+
+        function calculate() {
+            const display = document.getElementById('display');
+            let equation = display.value;
+
+            const result = eval(equation);
+
+            display.value = result;
+        }
+    </script>
+</body>
+</html>

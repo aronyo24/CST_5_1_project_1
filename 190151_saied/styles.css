@@ -1,0 +1,39 @@
+body {
+  font-family: 'SolaimanLipi', Arial, sans-serif; /* You can use a Bengali font like SolaimanLipi */
+}
+
+header {
+  background-color: #a11f7a;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {background-color: rgb(94, 175, 94);
+padding: 20px;
+h3 {
+  color: rgb(16, 240, 34);
+}
+}
+
+
+footer {
+  background-color: #4b4646;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}

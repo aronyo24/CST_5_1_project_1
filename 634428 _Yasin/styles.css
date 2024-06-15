@@ -1,0 +1,109 @@
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(image/wp3108477.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    margin: 20px;
+    width: 120px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;  
+}
+
+.title{
+    position: absolute;
+    top: 59%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+.button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 5px  20px;
+    color: #fff;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #fff ;
+    color: #000;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    bottom: 30;
+    top: 59%;
+    right: 10%; 
+    position:relative;
+    
+    
+}
+.content .par{
+    padding-left: 20%;
+    padding-bottom: 25%;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    
+}
+

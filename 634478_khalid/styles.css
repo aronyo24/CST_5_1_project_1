@@ -1,0 +1,248 @@
+body {
+	background-color: #0a0042;
+	font-family: Tahoma;
+	width: 100%;
+}
+
+.myinfo {
+    overflow: auto; /* Clear floats */
+}
+
+.part1 {
+    float: left;
+    margin-left: 35px;
+    color: #9dff00;
+    padding: 7px 0px 0px 0px;
+    font-size: 19px;
+}
+.part2 {
+    float: right;
+	margin-right: 35px;
+    color: #9dff00;
+    padding: 7px 0px 0px 0px;
+    font-size: 19px;
+}
+
+.part1 h2, .part2 h2,
+.part1 h3, .part2 h3 {
+    display: inline; /* Ensure inline display for h2 and h3 tags */
+	margin-left: 9px;
+}
+
+.part1 h3{
+	color: rgba(255, 255, 255, 0.884);
+	
+}
+.part2 h3{
+	color: rgba(255, 255, 255, 0.884);
+	
+}
+/*PROJECT INFO css start here*/
+
+.projectinfo{
+	text-align: center;
+	display: block;
+	margin-top: -25px; 
+}
+.projectinfo h2,
+.projectinfo h3 {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.p1 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #ffffffcf;
+}
+.p1 h2 {
+    font-size: 39px;
+    color: #7aff00;
+    font-family: system-ui;
+}
+
+.p1 h3 {
+    color: #dbdbd8f5;
+    font-size: 25px;
+}
+
+
+
+.p2 {
+    margin-top: -40px;
+    color: white;
+}
+
+.p2 h2 {
+    font-size: 23px;
+    color: #7aff00;
+    font-family: system-ui;
+}
+
+.p3 {
+    color: white;
+    margin-top: -20px;
+}
+
+.p3 h2 {
+    font-size: 19px;
+    color: #7aff00;
+    font-family: system-ui;
+}
+
+
+
+/* MAIN CALCULATOR CSS START HERE */
+
+
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	margin-top: -120px;
+}
+
+#container {
+	width: 200px;
+	padding: 8px 8px 20px 8px;
+	margin: 20px auto;
+	background-color: #0400ff;
+	border-radius: 4px;
+	border-top: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #C1C1C1;
+	border-left: 2px solid #C1C1C1;
+	
+	box-shadow: 0px 1px 9px #f5f1149c;
+
+	/* box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgb(9 50 199 / 50%); #OLD SHADOW */
+	
+
+
+}
+
+#display {
+	display: block;
+	margin: 15px auto;
+	height: 42px;
+	width: 174px;
+	padding: 0 10px;
+	border-radius: 4px;
+	border-top: 2px solid #C1C1C1;
+	border-right: 2px solid #C1C1C1;
+	border-bottom: 2px solid #FFF;
+	border-left: 2px solid #FFF;
+	background-color: #FFF;
+	box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+	font-size: 28px;
+	color: #666;
+	text-align: right;
+	font-weight: 400;
+}
+
+.button {
+	display: inline-block;
+	margin: 2px;
+	width: 42px;
+	height: 42px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+.mathButtons {
+	margin: 2px 2px 6px 2px;
+	color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #434343;
+	border-top: 2px solid #C1C1C1;
+	border-right: 2px solid #C1C1C1;
+	border-bottom: 2px solid #181818;
+	border-left: 2px solid #181818;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+}
+.mathButtons:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+.digits {
+	color: #181818;
+	text-shadow: 1px 1px 0px #FFF;
+	background-color: #EBEBEB;
+	border-top: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #C1C1C1;
+	border-left: 2px solid #C1C1C1;
+	border-radius: 4px;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;
+}
+
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover {
+	color: rgba(255, 255, 255, 0.295);
+	background-color: #190589;
+	box-shadow: 0px 0px 2px #0e015821, inset 0px -20px 1px #19058917;
+	border-top: 2px solid #1402776b;
+	border-right: 2px solid #190589;
+	border-bottom: 2px solid #190589;
+	border-left: 2px solid #190589;
+}
+
+#clearButton {
+	color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #D20000;
+	border-top: 2px solid #FF8484;
+	border-right: 2px solid #FF8484;
+	border-bottom: 2px solid #800000;
+	border-left: 2px solid #800000;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+}
+
+#clearButton:hover{
+	color: white;
+}
+
+
+/* COPYRIGHT SECTION START HERE */
+.copyright{
+	text-align: center;
+	color: pink;
+	font-size: 19px;
+	margin-top: -110px;
+
+}
+
+/* Responsive css style over here */
+
+@media (max-width: 600px) {
+    .myinfo, .projectinfo {
+        padding: 10px;
+    }
+
+    .myinfo h2, .projectinfo h2 {
+        font-size: 1em;
+    }
+
+    .myinfo h3, .projectinfo h3 {
+        font-size: 0.9em;
+    }
+
+    .container {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    input.button {
+        width: 22%;
+        font-size: 0.9em;
+    }
+
+    input#display {
+        font-size: 1em;
+    }
+}

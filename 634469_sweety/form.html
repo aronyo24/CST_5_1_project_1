@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Rejistration form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Registration form</h2>
+
+     <form>
+       <div>
+        <label for="fullname">fullname:</label>
+        <input type="text" name="fullname" id="fullname" Required>
+       </div> <br>
+
+       <div>
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email">
+       </div> <br>
+
+       <div>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password">
+       </div> <br>
+
+       <div>
+        <label for="dob">Date of birth:</label>
+        <input type="date" name="dob" id="dob">
+       </div> <br>
+
+       <div>
+        <label for="photo">choose your photo:</label>
+        <input type="file" name="photo" id="photo">
+       </div> <br>
+
+       <div>
+        <label for="gender">gender:</label>
+        <input type="radio" name="gender" id="gender"value="male">Male
+        <input type="radio" name="gender" id="gender"value="female">Female
+       </div> <br>
+
+       <div>
+        <label for="religion">religion :</label>
+        <input type="checkbox" name="c1" id="muslim"value="islam">Islam
+        <input type="checkbox" name="c1" id="hindu"value="hindu">Hindu
+       </div> <br>
+
+       <div>
+         <label for="department">department:</label>
+        <select name="department">
+           <option VALUE="CSE">CSE</option> 
+           <option VALUE="LLB">LLB</option> 
+           <option VALUE="EEE">EEE</option> 
+        
+        </select>
+       </div>
+
+       <DIV> 
+        <label for="message">massage:</label> <br>
+        <textarea colS="30" rows="07"></textarea>
+       </DIV>
+
+       <DIV>
+        <input type="submit" value="Register">
+        <input type="Reset" value="clear">
+       </DIV>
+
+
+
+     </form>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Numbers</title>
+</head>
+<body>
+
+<p>Enter the value of 't' (number of elements): <input type="number" id="numElements"></p>
+<button onclick="calculateSum()">Calculate Sum</button>
+
+<p id="result"></p>
+
+<script>
+  function calculateSum() {
+    // Get the number of elements from the input
+    var numElements = parseInt(document.getElementById("numElements").value);
+    
+    var sum = 0;
+
+    for (var i = 0; i < numElements; i++) {
+      // Ask for user input 't' times and add the values to the sum
+      var inputNumber = parseFloat(prompt("Enter number " + (i + 1) + ":"));
+      
+      // Check if the entered value is a number
+      if (!isNaN(inputNumber)) {
+        sum += inputNumber;
+      } else {
+        alert("Please enter a valid number.");
+        return; // Stop calculation if invalid input is provided
+      }
+    }
+
+    // Display the sum in the HTML
+    document.getElementById("result").innerText = "The sum is: " + sum;
+  }
+</script>
+
+</body>
+</html>
